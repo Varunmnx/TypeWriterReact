@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+  overflow:none;
+/*   text-size:150%; */
+}
+.center-item{
+  font-size:160%;
+  font-family: 'Inconsolata', monospace;
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow:hidden;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas,"Courier New",
+    monospace;
+}
+.vc{
+  background:blue;
+  height:50px;
+  position:relative;
+}
+.text{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 4px solid black;
+    font-size: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.animation{
+  animation: typewriter 4s steps(15) 1s 1 normal both,
+             blinkCursor 500ms steps(15) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 180px;
+  }
+}
+
+@keyframes blinkCursor{
+  from {
+    border-right-color: black;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
